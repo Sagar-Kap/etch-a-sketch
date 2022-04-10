@@ -1,23 +1,62 @@
 body {
-    background-color: rgb(216, 211, 211);
+    background-color: rgb(44, 43, 43);
 }
 
 .start {
     text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Rubik Bubbles', cursive;
+    color: rgb(228, 115, 39);
+    font-size: xxx-large;
 }
-.newDiv {
-    border: 1px;
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
 
-}
 
 .grid {
-    margin: auto;
-    height: 500px;
-    width: 500px;
+    background-color: rgb(255, 255, 255);
+    margin-right: auto;
+    border: 8px solid;
+    border-image: linear-gradient(45deg, rgb(8, 95, 59), rgb(13, 3, 158)) 1;
+    height: 550px;
+    width: 550px;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
+    grid-template-columns: repeat(var(--numOfBoxes), 1fr);
     grid-row: auto;
 
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.buttons {
+    margin-left: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-weight: bolder;
+}
+
+button {
+    background-color: rgb(8, 134, 50);
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 9px #999;
+    text-align: center;
+    outline: none;
+    border: none;
+
+}
+
+button:hover {
+    background-color: rgb(122, 13, 13);
+
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 9px #999;
 }

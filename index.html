@@ -2,13 +2,22 @@
 <html>
     <head>
         <title>Etch & Sketch</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet"> 
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <script src="play.js" defer></script>
     </head>
     <body>
         <h1 class="start">Etch a Sketch</h1>
-        <div class="grid"></div>
-        <button class="clear">Clear All</button>
+        <div class="container">
+            <div class="buttons">
+                <button class="change-game" onclick="window.location.href='https://sagar-kap.github.io/rock-paper-scissors/';">RPS</button>    
+                <button class="clear" >Clear All</button>
+            </div>
+            <div class="grid"></div>
+        </div>
     </body>
 </html>
